@@ -1,6 +1,17 @@
 .container {
-  width: var(--container-width);
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
+
+  // @media screen and (min-width: 480px) {
+  //   width: var(--mobile-container-width);
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: var(--tablet-container-width);
+  // }
+
+  @media screen and (min-width: 1170px) {
+    width: var(--container-width);
+  }
 }
