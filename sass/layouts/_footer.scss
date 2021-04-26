@@ -1,0 +1,81 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-accent-color);
+  color: var(--white-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*контакты*/
+  &__contact-link {
+    align-items: flex-start;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    padding: 0;
+    color: var(--address--link-col);
+
+    &:first-child {
+      color: var(--white-color);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer__part {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      width: calc(100% / 2);
+      margin-left: auto;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-top: 12px;
+    }
+  }
+}
+
+.email-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email__input {
+  color: currentColor;
+  background-color: transparent;
+  padding: 15px 16px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-border-email);
+  outline-color: var(--color-border-email);
+  border-radius: 4px;
+
+  min-width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  @include transition(border-color);
+  @include transition(outline-color);
+  // transition: border-color var(--animation), outline-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--primery-accent-color);
+    outline-color: var(--primery-accent-color);
+  }
+
+  &::placeholder {
+    color: var(--address--link-col);
+  }
+}
