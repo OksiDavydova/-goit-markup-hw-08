@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 446px;
+  min-width: 370px;
+  @media screen and (min-width: 767.98px) {
+    min-width: 446px;
+  }
 }
 
 .modal-form__label,
@@ -120,7 +123,8 @@
   background-color: transparent;
   border-radius: 2px;
   fill: none;
-  transition: fill var(--animation), background-color var(--animation), border-color var(--animation);
+  transition: fill var(--animation), background-color var(--animation),
+    border-color var(--animation);
 
   .checkbox_input:hover + &,
   .checkbox_input:focus + & {

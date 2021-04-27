@@ -1,5 +1,4 @@
 .team {
-  --grid-num: 4;
   &__meta {
     font-weight: 400;
     font-size: 16px;
@@ -23,9 +22,42 @@
     color: var(--text-primery-color);
   }
 
-  &__item-border {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     box-shadow: var(--box-shadow);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
+
+    --grid-num: 1;
+
+    @media screen and (min-width: 768px) {
+      --grid-num: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --grid-num: 4;
+    }
   }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   width: calc((100% - 30px) / 2);
+  //   margin-right: 30px;
+  // }
+
+  // &:nth-child(2n) {
+  //   margin-right: 0;
+  // }
+  // &__img {
+  //   width: 100%;
+  //   height: 460px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   height: 374px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   height: 260px;
+  // }
 }

@@ -6,49 +6,92 @@
   color: var(--white-color);
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: left;
+    }
+  }
+
+  .footer__address {
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-right: 70px;
+    }
   }
 
   /*контакты*/
   &__contact-link {
-    align-items: flex-start;
+    justify-content: center;
     font-weight: 400;
     letter-spacing: 0.03em;
     padding: 0;
     color: var(--address--link-col);
+    @media screen and (min-width: 1198.98px) {
+      justify-content: start;
+    }
 
     &:first-child {
       color: var(--white-color);
     }
 
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      @media screen and (min-width: 1198.98px) {
+        margin-bottom: 9px;
+      }
     }
   }
+}
 
-  .footer__part {
-    display: flex;
-    flex-direction: column;
+.footer__social {
+  display: flex;
+  flex-direction: column;
 
-    &:first-child {
-      margin-right: 30px;
-    }
+  align-items: center;
 
-    &:last-child {
-      width: calc(100% / 2);
-      margin-left: auto;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
-    &:nth-last-child(-n + 2) {
-      margin-top: 12px;
-    }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+}
+
+.footer__email-form {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    text-align: left;
+    margin-left: auto;
   }
 }
 
 .email-form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1199.98px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .email__input {
@@ -62,12 +105,16 @@
   outline-color: var(--color-border-email);
   border-radius: 4px;
 
-  min-width: 358px;
+  width: 450px;
   font-size: 16px;
   line-height: 1.25;
   @include transition(border-color);
   @include transition(outline-color);
-  // transition: border-color var(--animation), outline-color var(--animation);
+
+  @media screen and (min-width: 1199.98px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   &:hover,
   &:focus {

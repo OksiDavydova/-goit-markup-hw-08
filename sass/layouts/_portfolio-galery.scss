@@ -1,3 +1,13 @@
+.gallery__item {
+  --grid-num: 1;
+
+  @media screen and (min-width: 768px) {
+    --grid-num: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-num: 3;
+  }
+}
 .product__link {
   display: flex;
   flex-direction: column;

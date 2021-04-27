@@ -1,8 +1,24 @@
 .competence {
-  --grid-num: 4;
   &__item {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    // margin-bottom: 30px;
+    --grid-num: 1;
+
+    @media screen and (min-width: 768px) {
+      --grid-num: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --grid-num: 4;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    // min-width: 480px;
+    // margin-left: 30px;
+    // margin-right: 30px;
   }
 
   &__text {
