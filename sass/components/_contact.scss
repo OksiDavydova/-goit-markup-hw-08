@@ -1,21 +1,40 @@
 .contact {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+  @media screen and (min-width: 767.98px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1199.98px) {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
-// .contact__item + .contact__item {
-//   margin-left: 50px;
-// }
+@media screen and (min-width: 1199.98px) {
+  .contact__item + .contact__item {
+    margin-left: 50px;
+  }
+}
 
 .contact__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   letter-spacing: 0.02em;
   color: var(--text-primery-color);
 
   transition: color var(--animation);
+  @media screen and (min-width: 1199.98px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {

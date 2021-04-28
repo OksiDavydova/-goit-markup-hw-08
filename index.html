@@ -22,57 +22,45 @@
           ><span class="logo--accent-collor">Web</span><span>Studio</span></a
         >
         <!-- навигация -->
-        <div class="menu-container" id="menu-container" data-menu>
-          <nav class="header__navigation">
-            <ul class="list menu">
-              <li class="menu__item">
-                <a class="link menu__link menu__link--current" href="/"
-                  >Студия</a
-                >
-              </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu__item">
-                <a class="link menu__link" href="#add">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <!--контакты-->
-          <ul class="list contact">
-            <li class="contact__item">
-              <a class="link contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#email"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+
+        <nav class="header__navigation">
+          <ul class="list menu">
+            <li class="menu__item">
+              <a class="link menu__link menu__link--current" href="/">Студия</a>
             </li>
-            <li class="contact__item">
-              <a class="link contact__link" href="tel:+380961111111">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+            <li class="menu__item">
+              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#">Контакты</a>
             </li>
           </ul>
-        </div>
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="24px"
-            height="16px"
-            aria-label="Переключатель мобильного меню"
-          >
+        </nav>
+        <!--контакты-->
+        <ul class="list contact">
+          <li class="contact__item">
+            <a class="link contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="link contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu__icon">
             <use class="icon-menu" href="./images/icons.svg#mobile-menu"></use>
             <use
-              class="icon-cross"
+              class="icon-close"
               href="./images/icons.svg#mobile-menu-close"
             ></use>
           </svg>
@@ -207,8 +195,9 @@
             <li class="grid__item team__item">
               <img
                 class="team__img"
+                srcset="./images/team1-1x.jpg, ./images/team1-@2x.jpg 2x"
                 src="./images/teamcard1.jpg"
-                alt="Игорь Демьяненко"
+                alt="На фотографии Игорь Демьяненко"
                 width="270"
                 height="260"
               />
@@ -253,8 +242,9 @@
             <li class="grid__item team__item">
               <img
                 class="team__img"
+                srcset="./images/team2-1x.jpg, ./images/team2-@2x.jpg 2x"
                 src="./images/teamcard2.jpg"
-                alt="Ольга Репина"
+                alt="На фотографии Ольга Репина"
                 width="270"
               />
               <div class="team__meta">
@@ -298,8 +288,9 @@
             <li class="grid__item team__item">
               <img
                 class="team__img"
+                srcset="./images/team3-1x.jpg, ./images/team3-@2x.jpg 2x"
                 src="./images/teamcard3.jpg"
-                alt="Николай Тарасов"
+                alt="На фотографии Николай Тарасов"
                 width="270"
               />
               <div class="team__meta">
@@ -343,8 +334,9 @@
             <li class="grid__item team__item">
               <img
                 class="team__img"
+                srcset="./images/team4-1x.jpg, ./images/team4-@2x.jpg 2x"
                 src="./images/teamcard4.jpg"
-                alt="Михаил Ермаков"
+                alt="На фотографии Михаил Ермаков"
                 width="270"
               />
               <div class="team__meta">
@@ -630,6 +622,61 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu" data-menu>
+      <div class="mobile__content">
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a
+              class="link mobile-menu__link mobile-menu__link--current"
+              href="#"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="list mobile-contact">
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link mobile-contact__link--accent"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a href="#" class="link mobile-social__link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="link mobile-social__link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="link mobile-social__link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="#" class="link mobile-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
