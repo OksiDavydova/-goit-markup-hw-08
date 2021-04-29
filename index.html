@@ -154,31 +154,63 @@
           <ul class="grid list work">
             <li class="grid__item">
               <div class="work__thumb">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Десктопные приложения"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box1_desktop.jpg    1x,
+                      ./images/box1@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box1_desktop.jpg "
+                    width="370"
+                    alt="Десктопные приложения"
+                  />
+                </picture>
+
                 <span class="work__text">Десктопные приложения</span>
               </div>
             </li>
             <li class="grid__item">
               <div class="work__thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Мобильные приложения"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box2_desktop.jpg    1x,
+                      ./images/box2@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box2_desktop.jpg "
+                    width="370"
+                    alt="Мобильные приложения"
+                  />
+                </picture>
+
                 <span class="work__text">Мобильные приложения</span>
               </div>
             </li>
             <li class="grid__item">
               <div class="work__thumb">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Дизайнерские решения"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/box3_desktop.jpg    1x,
+                      ./images/box3@2x_desktop.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box3_desktop.jpg "
+                    width="370"
+                    alt="Дизайнерские решения"
+                  />
+                </picture>
                 <span class="work__text">Дизайнерские решения</span>
               </div>
             </li>
@@ -193,14 +225,40 @@
 
           <ul class="grid team list">
             <li class="grid__item team__item">
-              <img
-                class="team__img"
-                srcset="./images/team1-1x.jpg, ./images/team1-@2x.jpg 2x"
-                src="./images/teamcard1.jpg"
-                alt="На фотографии Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/team/team1_desktop.jpg    1x,
+                    ./images/team/team1@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1_tablet.jpg    1x,
+                    ./images/team/team1@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1_mobile.jpg    1x,
+                    ./images/team/team1@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <!--поставить фотографию с десктопа-->
+                <img
+                  src="./images/team/team1_desktop.jpg"
+                  width="450"
+                  alt="На
+                фотографии Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team__meta">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -240,13 +298,39 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img
-                class="team__img"
-                srcset="./images/team2-1x.jpg, ./images/team2-@2x.jpg 2x"
-                src="./images/teamcard2.jpg"
-                alt="На фотографии Ольга Репина"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/team/team2_desktop.jpg    1x,
+                    ./images/team/team2@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2_tablet.jpg    1x,
+                    ./images/team/team2@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2_mobile.jpg    1x,
+                    ./images/team/team2@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <!--поставить фотографию с десктопа-->
+                <img
+                  src="./images/team/team2_desktop.jpg"
+                  width="450"
+                  alt="На фотографии Ольга Репина"
+                />
+              </picture>
+
               <div class="team__meta">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -286,13 +370,39 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img
-                class="team__img"
-                srcset="./images/team3-1x.jpg, ./images/team3-@2x.jpg 2x"
-                src="./images/teamcard3.jpg"
-                alt="На фотографии Николай Тарасов"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/team/team3_desktop.jpg    1x,
+                    ./images/team/team3@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3_tablet.jpg    1x,
+                    ./images/team/team3@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3_mobile.jpg    1x,
+                    ./images/team/team3@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <!--поставить фотографию с десктопа-->
+                <img
+                  src="./images/team/team3_desktop.jpg"
+                  width="450"
+                  alt="На фотографии Николай Тарасов"
+                />
+              </picture>
+
               <div class="team__meta">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -332,13 +442,39 @@
               </div>
             </li>
             <li class="grid__item team__item">
-              <img
-                class="team__img"
-                srcset="./images/team4-1x.jpg, ./images/team4-@2x.jpg 2x"
-                src="./images/teamcard4.jpg"
-                alt="На фотографии Михаил Ермаков"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/team/team4_desktop.jpg    1x,
+                    ./images/team/team4@2x_desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4_tablet.jpg    1x,
+                    ./images/team/team4@2x_tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4_mobile.jpg    1x,
+                    ./images/team/team4@2x_mobile.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <!--поставить фотографию с десктопа-->
+                <img
+                  src="./images/team/team4_desktop.jpg"
+                  width="450"
+                  alt="На фотографии Михаил Ермаков"
+                />
+              </picture>
+
               <div class="team__meta">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
