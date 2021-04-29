@@ -7,6 +7,11 @@
   @media screen and (min-width: 1200px) {
     --grid-num: 3;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    &:first-child .product__meta {
+      min-height: 146px;
+    }
+  }
 }
 .product__link {
   display: flex;

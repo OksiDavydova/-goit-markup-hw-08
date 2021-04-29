@@ -57,6 +57,7 @@
   height: 16px;
   fill: currentColor;
 }
+
 @media screen and (max-width: 767.98px) {
   .mobile-menu {
     position: fixed;
@@ -66,7 +67,7 @@
     flex-direction: column;
     z-index: 100;
     width: 100%;
-    // max-width: 320px;
+    min-width: 320px;
     height: 100vh;
     padding: 48px 40px;
     background: #ffffff;
@@ -94,10 +95,18 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #212121;
+
+  @media screen and (min-width: 320px) and (max-width: 479.98px) {
+    font-size: 30px;
+  }
 }
 
 .mobile-menu__list {
   margin-bottom: 300px;
+
+  @media screen and (min-width: 320px) and (max-width: 479.98px) {
+    margin-bottom: 200px;
+  }
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
@@ -126,14 +135,20 @@
     font-size: 24px;
     line-height: 1.67;
     letter-spacing: 0.02em;
-
     color: #757575;
+    @media screen and (min-width: 320px) and (max-width: 479.98px) {
+      font-size: 20px;
+    }
 
     &--accent {
       font-size: 34px;
       line-height: 1.8;
 
       color: #2196f3;
+
+      @media screen and (min-width: 320px) and (max-width: 479.98px) {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -144,7 +159,11 @@
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
-  min-width: 357px;
+
+  @media screen and (min-width: 320px) and (max-width: 479.98px) {
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
 
   &__item {
     padding-right: 10px;

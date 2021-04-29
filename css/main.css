@@ -537,6 +537,7 @@ address {
     flex-direction: column;
     z-index: 100;
     width: 100%;
+    min-width: 320px;
     height: 100vh;
     padding: 48px 40px;
     background: #ffffff;
@@ -564,8 +565,20 @@ address {
   color: #212121;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile__content {
+    font-size: 30px;
+  }
+}
+
 .mobile-menu__list {
   margin-bottom: 300px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-menu__list {
+    margin-bottom: 200px;
+  }
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -601,10 +614,22 @@ address {
   color: #757575;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-contact__link {
+    font-size: 20px;
+  }
+}
+
 .mobile-contact__link--accent {
   font-size: 34px;
   line-height: 1.8;
   color: #2196f3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-contact__link--accent {
+    font-size: 25px;
+  }
 }
 
 .mobile-social {
@@ -612,7 +637,13 @@ address {
   font-size: 18px;
   line-height: 1.22;
   color: #2196f3;
-  min-width: 357px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-social {
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
 }
 
 .mobile-social__item {
@@ -1592,6 +1623,12 @@ address {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  .filter__item:nth-last-child(-n + 3) {
+    margin-top: 15px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .filter__item:nth-last-child(-n + 2) {
     margin-top: 15px;
@@ -1638,6 +1675,12 @@ address {
 @media screen and (min-width: 1200px) {
   .gallery__item {
     --grid-num: 3;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .gallery__item:first-child .product__meta {
+    min-height: 146px;
   }
 }
 
